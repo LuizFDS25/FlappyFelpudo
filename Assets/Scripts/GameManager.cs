@@ -101,6 +101,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         Destroy(scoreText.gameObject);
+        HideBossUI();
         gameOverPanel.SetActive(true);
         finalScoreTextBad.text = "Pontuação Final: " + score;
     }
@@ -109,6 +110,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         Destroy(scoreText.gameObject);
+        HideBossUI();
         gameWonPanel.SetActive(true);
         finalScoreTextGood.text = "Pontuação Final: " + score;
     }
